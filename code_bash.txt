@@ -1,0 +1,89 @@
+
+pc9@DESKTOP-5N0V25D MINGW64 ~
+$ cd work
+
+pc9@DESKTOP-5N0V25D MINGW64 ~/work
+$ rm -Rf *
+
+pc9@DESKTOP-5N0V25D MINGW64 ~/work
+$ pwd
+/c/Users/pc9/work
+
+pc9@DESKTOP-5N0V25D MINGW64 ~/work
+$ ls
+
+pc9@DESKTOP-5N0V25D MINGW64 ~/work
+$ git clone http://github.com/winkite/oss_git_example
+Cloning into 'oss_git_example'...
+warning: redirecting to https://github.com/winkite/oss_git_example/
+remote: Enumerating objects: 3, done.
+remote: Counting objects: 100% (3/3), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), done.
+
+pc9@DESKTOP-5N0V25D MINGW64 ~/work
+$ ls
+oss_git_example/
+
+pc9@DESKTOP-5N0V25D MINGW64 ~/work
+$ cd oss_git_example/
+
+pc9@DESKTOP-5N0V25D MINGW64 ~/work/oss_git_example (master)
+$ ls
+README.md
+
+pc9@DESKTOP-5N0V25D MINGW64 ~/work/oss_git_example (master)
+$ cat README.md
+# oss_git_example
+pc9@DESKTOP-5N0V25D MINGW64 ~/work/oss_git_example (master)
+$ touch 150346.txt
+
+pc9@DESKTOP-5N0V25D MINGW64 ~/work/oss_git_example (master)
+$ ls
+150346.txt  README.md
+
+pc9@DESKTOP-5N0V25D MINGW64 ~/work/oss_git_example (master)
+$ git add 150346.txt
+
+pc9@DESKTOP-5N0V25D MINGW64 ~/work/oss_git_example (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        new file:   150346.txt
+
+
+pc9@DESKTOP-5N0V25D MINGW64 ~/work/oss_git_example (master)
+$ git commit -m "first commit"
+[master 345226c] first commit
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 150346.txt
+
+pc9@DESKTOP-5N0V25D MINGW64 ~/work/oss_git_example (master)
+$ cat README.md
+# oss_git_example
+pc9@DESKTOP-5N0V25D MINGW64 ~/work/oss_git_example (master)
+$ git push orgin master
+fatal: 'orgin' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+pc9@DESKTOP-5N0V25D MINGW64 ~/work/oss_git_example (master)
+$ git push origin master
+warning: redirecting to https://github.com/winkite/oss_git_example/
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 273 bytes | 273.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To http://github.com/winkite/oss_git_example
+   933e1f1..345226c  master -> master
+
+pc9@DESKTOP-5N0V25D MINGW64 ~/work/oss_git_example (master)
+$
