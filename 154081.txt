@@ -1,2 +1,0 @@
-Hello, I'm SeungWoo Yang.
-This is my first git.[D.
